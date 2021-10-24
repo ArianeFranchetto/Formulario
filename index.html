@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<header id="cabecalho">
+	<meta charset="utf-8">
+	<title>Cadastros</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<div class="campo">
+		<h1 id="titulo">Cadastre seu Pet</h1>
+		<p id="subtitulo">Complete as informações</p>
+		<br>
+
+
+	</div>
+
+	<form>
+		<fieldset class="grupo">
+			<div class="campo">
+				<label for="nome">Nome</label>
+				<input type="text" name="nome" id="nome">
+			</div>
+
+			<div class="campo">
+				<label for="raca">Raça</label>
+				<input type="text" name="raca" id="raca">
+			</div>
+
+			<div class="campo">
+    	<label for="email">Email:</label>
+    	<input type="email" name="email" id="email">
+    </div>
+		</fieldset>
+
+		<div class="campo">
+			<label>
+				O seu melhor amigo é:
+			</label>
+			<label>
+				<input type="radio" name="catdog" value="gato">
+				Gato
+			</label>
+			<label>
+				<input type="radio" name="catdog" value="cachorro">
+				Cachorro
+			</label>
+		</div>
+
+		<div class="campo">
+			<label>
+				Idade
+			</label>
+			<select id="idade">
+				<option selected="disabled" value="">Selecione</option>
+				<option>1 mês a 1 ano</option>
+				<option>2 a 10 dez anos</option>
+				<option>Mais que 10 anos</option>
+
+			</select>
+		</div>
+
+		<fieldset class="grupo">
+			<div id="check">
+				<label>
+					Selecione o tempo de estadia
+				</label>
+				<input type="checkbox" name="semana" id="semana" value="semana">
+				<label for="semana">Uma semana </label>
+				<input type="checkbox" name="mes" id="mes" value="mes">
+				<label for="mes">Um mês </label>
+				<input type="checkbox" name="acombinar" id="acombinar" value="acombinar">
+				<label for="acombinar">A combinar </label>
+				<input type="checkbox" name="pacote" id="pacote" value="pacote">
+				<label for="estadia">Pacote</label>
+			</div>
+		</fieldset>
+
+		<div class="campo">
+			<br>
+			<label>Conte um pouco do seu Pet</label>
+			<textarea row="6" style="width: 15cm; height: 5cm;" id="contesobre"></textarea>
+		</div>
+
+		
+		<button class="botao">Concluído</button>
+
+	</form>
+	</header>
+
+</body>
+</html>
